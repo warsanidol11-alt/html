@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Semantic HTML Demo</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 0; }
+    header, nav, main, section, article, aside, footer {
+      padding: 16px;
+      margin: 8px;
+      border: 1px solid #ccc;
+    }
+    nav ul { list-style: none; padding: 0; display: flex; gap: 10px; }
+    figure { margin: 0; }
+    figcaption { font-size: 0.9em; color: gray; }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>My Semantic Website</h1>
+  <p>Using all major HTML semantic elements</p>
+</header>
+
+<nav>
+  <ul>
+    <li><a href="#">Home</a></li>
+    <li><a href="#">About</a></li>
+    <li><a href="#">Contact</a></li>
+  </ul>
+</nav>
+
+<main>
+  <section>
+    <h2>Section Title</h2>
+    <article>
+      <h3>Article Title</h3>
+      <p>This is an article inside a section.</p>
+
+      <figure>
+        <img src="https://via.placeholder.com/150" alt="Example image">
+        <figcaption>Example figure with caption</figcaption>
+      </figure>
+
+      <details>
+        <summary>Click for more info</summary>
+        <p>Hidden extra details shown on click.</p>
+      </details>
+
+      <time datetime="2026-04-28">April 28, 2026</time>
+    </article>
+  </section>
+
+  <aside>
+    <h2>Aside</h2>
+    <p>This is additional related content.</p>
+  </aside>
+</main>
+
+<footer>
+  <p>&copy; 2026 My Website</p>
+  <address>
+    Contact: <a href="mailto:example@email.com">example@email.com</a>
+  </address>
+</footer>
+
+</body>
+</html>

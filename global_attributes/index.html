@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+  <title>Global Attributes Demo</title>
+  <style>
+    .box { border: 1px solid #333; padding: 10px; margin: 10px; }
+  </style>
+</head>
+<body id="mainBody" class="container" data-page="demo" spellcheck="true">
+
+  <header id="header" class="box" title="This is the header" draggable="true">
+    <h1 id="title" class="heading" contenteditable="true">Editable Heading</h1>
+    <nav id="nav" class="box" data-role="navigation">
+      <a href="#" id="homeLink" class="link" tabindex="1">Home</a>
+      <a href="#" id="aboutLink" class="link" tabindex="2">About</a>
+    </nav>
+  </header>
+
+  <main id="mainContent" class="box" lang="en">
+    <section id="section1" class="box" title="Section 1" data-section="1">
+      <h2 id="sec1Title" class="subheading">Section 1</h2>
+      <p id="para1" class="text" contenteditable="true" spellcheck="true">
+        This paragraph is editable and spellcheck is enabled.
+      </p>
+      <button id="btn1" class="btn" tabindex="3" draggable="true">Click Me</button>
+    </section>
+
+    <section id="section2" class="box" hidden data-section="2">
+      <h2 id="sec2Title" class="subheading">Hidden Section</h2>
+      <p id="para2" class="text">You shouldn't see this unless 'hidden' is removed.</p>
+    </section>
+
+    <article id="article1" class="box" dir="rtl" title="Right-to-left text">
+      <p id="rtlText">هذا نص باللغة العربية (RTL)</p>
+    </article>
+
+    <ul id="list" class="box" data-list="example">
+      <li id="item1" class="item" tabindex="4">Item 1</li>
+      <li id="item2" class="item" tabindex="5">Item 2</li>
+      <li id="item3" class="item" tabindex="6">Item 3</li>
+    </ul>
+
+    <form id="form1" class="box" data-form="demo">
+      <label for="input1" id="label1">Name:</label>
+      <input id="input1" class="input" type="text" placeholder="Enter name" />
+      <input id="submitBtn" class="btn" type="submit" value="Submit" />
+    </form>
+
+    <img id="image1" class="box" src="https://via.placeholder.com/100"
+         alt="Placeholder Image" title="Sample Image" draggable="false" />
+
+    <div id="editableDiv" class="box" contenteditable="true" data-editable="true">
+      You can edit this div.
+    </div>
+   
+  </main>
+
+  <footer id="footer" class="box" title="Footer section">
+    <p id="footerText">Footer content here</p>
+  </footer>
+    
+</body>
+</html>
